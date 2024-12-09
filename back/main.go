@@ -23,7 +23,7 @@ func main() {
 	router := gin.Default()
 
 	// 간단한 핸들러 설정
-	router.GET("/ping", func(c *gin.Context) {
+	router.GET("/ping/back", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"message": "pong",
 		})
