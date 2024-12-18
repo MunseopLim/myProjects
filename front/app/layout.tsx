@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "myProject",
-  description: "a playground for showing off my projects",
+  title: process.env.METADATA_TITLE,
+  description: process.env.METADATA_DESCRIPTION,
 };
 
 export default function RootLayout({
